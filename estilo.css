@@ -1,0 +1,203 @@
+ * { /* CSS RESET */
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: honeydew;
+    background-image: url("img/fundo.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav {
+    width: 960px;
+    height: 50px;
+    /* border-style: solid;
+    border-color: forestgreen;
+    border-width: 1px;
+     */
+    border: 1px solid forestgreen;
+    background-color: azure;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px rgb(68,88,80,0.6);
+}
+
+/* inicio menu CSS */
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+nav ul li {
+    line-height: 50px;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bolder;
+    font-family: consolas, arial, verdana;
+    font-size: 12pt;
+    /* text-shadow: 2px 2px 4px rgb(241, 230, 241); */
+    transition: font-size, 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgb(14, 131, 49);
+    /* border-bottom: 2px solid #000; */
+    transition: font-size, 0.3s;
+}
+
+/* FIM MENU CSS */
+
+header {
+    width: 960px;
+    height: 250px;
+    /* border: 1px solid forestgreen; */
+    background-color: azure;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px rgb(68,88,80,0.6);
+    background-image: url("img/pexels-septimiu-lupea-208604-669015.jpg");
+    background-size: 960px 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-name: slide;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slide {
+      0% {background-image: url("img/pexels-wildlittlethingsphoto-1774927.jpg");background-size: cover}
+     25% {background-image: url("img/pexels-wildlittlethingsphoto-1774879.jpg");background-size: cover}
+     50% {background-image: url("img/pexels-geovana-mourao-506675855-16185426.jpg");background-size: cover}
+     75% {background-image: url("img/pexels-photopatea-1893158.jpg");background-size: cover}
+    100% {background-image: url("img/pexels-claire-thibault-10977-57021.jpg");background-size: cover}
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 960px;
+    height: 600px;
+    /* border: 1px solid forestgreen; */
+    border-radius: 8px;
+    background-color: azure;
+    margin-top: 10px;
+    box-shadow: 1px 1px 10px forestgreen;
+}
+
+.row {
+    display: flex;
+    margin: 15px;        
+}
+
+.row2 {
+    display: flex;
+    margin: 15px; 
+    width: 900px;
+    height: 250px;    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;       
+}
+
+
+.row section {
+    width: 350px;
+    height: 250px;
+    margin-left: 10px;
+    /* border-radius: 1px rgb(23, 65, 155); */
+    border-radius: 8px;
+    background-color: rgb(241, 230, 241);
+    box-shadow: 1px 1px 10px rgb(68,88,80,0.6)
+}
+
+.row section img, iframe {
+    width: 350px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.row aside {
+    width: 600px;
+    height: 250px;
+    margin-left: 10px;
+    border-radius: 8px;
+    background-color: rgb(241, 230, 241);
+    box-shadow: 1px 1px 10px rgb(68,88,80,0.6);
+}
+
+.row aside h2 {
+    text-align: left;
+    padding: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.row aside p {
+    text-align: justify;
+    padding: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 11pt;
+    text-indent: 20px;
+}
+
+.row2 aside {
+    text-align: center;
+    width: 960px;
+    height: 250px;
+    margin-left: 10px;
+    /* border-radius: 8px;
+    box-shadow: 1px 1px 10px rgb(68,88,80,0.6); */
+}
+
+.row2 aside h2 {
+    text-align: center;
+    padding: 8px;
+    font-size: 24pt;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.row2 aside p {
+    text-align: justify;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 11pt;    
+}
+
+.row2 section fieldset {
+    width: 960px;
+    height: 650px;
+    margin-left: 10px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px rgb(68,88,80,0.6);
+}
+
+footer {
+    width: 960px;
+    height: 50px;
+    /* border: 1px solid forestgreen; */
+    background-color: azure;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px rgb(68,88,80,0.6);
+}
+
+footer p {
+    text-align: right;
+    line-height: 50px;
+    font-style: italic;
+    margin-right: 10px;
+}
